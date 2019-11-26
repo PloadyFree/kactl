@@ -1,3 +1,14 @@
+/**
+ * Author: e-maxx
+ * Date: 2019-11-26
+ * Source: http://www.e-maxx-ru.1gb.ru/algo/eratosthenes_sieve
+ * Description: Prime sieve for generating all primes up to a certain limit.
+ * Status: Tested
+ * Memory: O(\sqrt n)
+ * Time: O(\log \log n)
+ */
+#pragma once
+
 const int SQRT_MAXN = 100000; // maxN sqaure root
 const int S = 10000; //block size (1e4..1e5)
 bool nprime[SQRT_MAXN], bl[S];
