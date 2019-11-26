@@ -13,7 +13,7 @@ const int SQRT_MAXN = 100000; // maxN sqaure root
 const int S = 10000; //block size (1e4..1e5)
 bool nprime[SQRT_MAXN], bl[S];
 int primes[SQRT_MAXN], cnt;
-void find(int n) {
+void eratosthenes_sieve_sqrt(int n) {
 	int nsqrt = (int) sqrt (n + .0);
 	for (int i=2; i<=nsqrt; ++i)
 		if (!nprime[i]) {
