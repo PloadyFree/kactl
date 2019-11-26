@@ -5,7 +5,7 @@
  * Description: Prime sieve for generating all primes up to a certain limit.
  * Status: Tested
  * Memory: O(\sqrt n)
- * Time: O(\log \log n)
+ * Time: O(n \log \log n)
  */
 #pragma once
 
