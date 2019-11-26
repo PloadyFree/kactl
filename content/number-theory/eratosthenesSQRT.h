@@ -3,7 +3,6 @@
  * Date: 2019-11-26
  * Source: http://www.e-maxx-ru.1gb.ru/algo/eratosthenes_sieve
  * Description: Prime sieve for generating all primes up to a certain limit.
- * Status: Tested
  * Memory: O(\sqrt n)
  * Time: O(n \log \log n)
  */
