@@ -9,7 +9,6 @@ const val YANDEX = false
 const val FORCE_LOCAL = false
 val OJ = !FORCE_LOCAL && (YANDEX || System.getProperty("ONLINE_JUDGE") != null)
 
-@Suppress("unused")
 val LOCAL = !OJ
 
 fun main() {
@@ -32,7 +31,6 @@ class Task(private val fin: FastReader = FastReader()) {
     }
 }
 
-@Suppress("unused")
 class FastReader(fileName: String? = null) {
     @JvmField
     val br = BufferedReader(if (fileName != null) FileReader(fileName) else InputStreamReader(System.`in`))
