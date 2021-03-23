@@ -2,7 +2,7 @@
  * Author: Musin
  * Source: Head
  * Date: 2021-03-23
- * Description: Template.
+ * Description:
  */
 
 const val YANDEX = false
