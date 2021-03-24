@@ -12,7 +12,7 @@
 * Фенвик на добавление функции
 * Sparse Table
 * Bridges, Cutpoints
-* Circulation
+* Flow Circulation
 * SCC, 2SAT
 * Primality Check
 * Euclid
