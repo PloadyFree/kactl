@@ -34,6 +34,8 @@ struct Point {
 	// returns point rotated 'a' radians ccw around the origin
 	P rotate(double a) const {
 		return P(x*cos(a)-y*sin(a),x*sin(a)+y*cos(a)); }
+    // make line -> A=p.y-y, B=x-p.x, C=-ax-by
+    // this.angle(a,b) = {v1=a-this,v2=b-this,tan2(v1*v2,v1%v2)}
 	friend ostream& operator<<(ostream& os, P p) {
 		return os << "(" << p.x << "," << p.y << ")"; }
 };

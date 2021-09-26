@@ -26,3 +26,7 @@ double segDist(P& s, P& e, P& p) {
 	auto d = (e-s).dist2(), t = min(d,max(.0,(p-s).dot(e-s)));
 	return ((p-s)*d-(e-s)*t).dist()/d;
 }
+template <Point>
+bool contains(const Point &p) const {
+  return (abs((from - p) * (to - p)) <= eps) &&
+    (((from - p) % (to - p)) <= eps); }

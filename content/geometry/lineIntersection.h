@@ -31,3 +31,19 @@ pair<int, P> lineInter(P s1, P e1, P s2, P e2) {
 	auto p = s2.cross(e1, e2), q = s2.cross(e2, s1);
 	return {1, (s1 * p + e1 * q) / d};
 }
+template<class P, class Line>
+P intersect(const Line &other) const {
+  auto a1 = a, b1 = b, c1 = c,
+    a2 = other.a, b2 = other.b, c2 = other.c;
+  auto det = a2 * b1 - a1 * b2;
+  // if det == 0 then no intersection, not handled yet
+  auto x = (b2 * c1 - b1 * c2) / det;
+  auto y = (a1 * c2 - a2 * c1) / det;
+  return {x, y};
+}
+template<Line>
+bool parallel(const Line &line) const {
+  return a * line.b == b * line.a; }
+template<Line>
+Line perpendicular(const Point &p) const {
+  return {-b, a, b * p.x - a * p.y}; }
